@@ -19,3 +19,9 @@ def kmp(pattern, text):
         if pref[i] == pl:
             res.append(i - 2*pl)
     return res if res else [-1]
+
+
+if __name__ == '__main__':
+    str1 = input()
+    str2 = input()
+    print(*kmp(str1, str2), end="")
